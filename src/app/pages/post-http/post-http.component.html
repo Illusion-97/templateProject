@@ -1,0 +1,18 @@
+<section>
+  <header class="major">
+    <h2>Posts - JsonServer</h2>
+  </header>
+  <div class="posts">
+    <ng-container *ngFor="let post of posts">
+      <article *ngIf="post.imageSrc">
+        <a [href]="post.postLink" class="image"><img [src]="'assets/images/'+post.imageSrc" [alt]="post.imageAlt" /></a>
+        <h3>{{post.titre}}</h3>
+        <p>{{post.description}}</p>
+        <ul class="actions">
+          <li><a [routerLink]="'/editor/' + post.id" class="button">Éditer</a></li>
+          <li><a (click)="deletePost(post.id)" class="button primary">Supprimer</a></li>
+        </ul>
+      </article>
+    </ng-container>
+  </div>
+</section>
