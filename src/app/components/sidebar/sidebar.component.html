@@ -1,6 +1,11 @@
 <div id="sidebar">
   <div class="inner">
 
+    <section>
+      <p>Bonjour : {{currentUserName}}</p>
+      <button *ngIf="currentUserName !== 'Anonyme'" (click)="logout()" class="primary">Déconnexion</button>
+    </section>
+
     <!-- Search -->
     <section id="search" class="alt">
       <form method="post" action="#">

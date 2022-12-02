@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "description": "une description",
+      "imageAlt": "",
+      "imageSrc": "",
+      "postLink": "un lien",
+      "titre": "Notre organisme de formations"
+    },
+    {
+      "id": 2,
+      "description": "une description",
+      "imageAlt": "",
+      "imageSrc": "pic01.jpg",
+      "postLink": "un lien",
+      "titre": "Second One"
+    },
+    {
+      "id": 3,
+      "description": "une description",
+      "imageAlt": "pico",
+      "imageSrc": "pic01.jpg",
+      "postLink": "un lien",
+      "titre": "First One"
+    }
+  ]
+}
